@@ -40,6 +40,12 @@
 			Game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\episodic\"
 			Game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\"
 			
+			// me being lazy as hell, later ill just copy everything unless we get vpk support in
+			// this is just the hl2 vpk's extracted, so its here for now until vpk time
+			// and SHUT UP ETHAN I KNOW THIS IS BAD
+			// just do the same thing I did and add the directory for yours below
+			Game				"C:\sourceengine\extracted_games\HL2\hl2\"
+			
 			Platform			platform
 		}
 	}
