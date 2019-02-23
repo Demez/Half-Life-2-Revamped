@@ -31,21 +31,28 @@
 		//
 		SearchPaths
 		{
+			gamebin				|gameinfo_path|bin.
+			
 			Game				|gameinfo_path|.
-			Game				mod_episodic
+			//Game				mod_episodic
 			Game				mod_hl2
 			
+			// ok i can't use this lol
 			// map loading for testing, will remove once i get the vmf's in here
-			Game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\ep2\"
-			Game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\episodic\"
-			Game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\"
+			//Game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\ep2\"
+			//Game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\episodic\"
+			//Game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\"
 			
-			// me being lazy as hell, later ill just copy everything unless we get vpk support in
-			// this is just the hl2 vpk's extracted, so its here for now until vpk time
-			// and SHUT UP ETHAN I KNOW THIS IS BAD
-			// just do the same thing I did and add the directory for yours below
-			Game				"C:\sourceengine\extracted_games\HL2\hl2\"
+			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\hl2_sound_vo_english.vpk"
+			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\hl2_pak.vpk"
+			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\hl2_textures.vpk"
+			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\hl2_sound_misc.vpk"
+			game				|all_source_engine_paths|hl2/hl2_misc.vpk
 			
+			
+			mod+mod_write+default_write_path		|gameinfo_path|.
+			
+			platform			|all_source_engine_paths|platform/platform_misc.vpk
 			Platform			platform
 		}
 	}
