@@ -47,12 +47,16 @@
 			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\hl2_pak.vpk"
 			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\hl2_textures.vpk"
 			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\hl2_sound_misc.vpk"
-			game				|all_source_engine_paths|hl2/hl2_misc.vpk
+			
+			// temp until i can use hl2_misc.vpk without issues, and when |all_source_engine_paths| works
+			game				"C:\sourceengine\extracted_games\HL2\misc"
+			
+			// temp for map mounting until |all_source_engine_paths| works
+			Game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\"
 			
 			
 			mod+mod_write+default_write_path		|gameinfo_path|.
 			
-			platform			|all_source_engine_paths|platform/platform_misc.vpk
 			Platform			platform
 		}
 	}
