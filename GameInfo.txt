@@ -31,8 +31,10 @@
 		//
 		SearchPaths
 		{
+			
 		// * is broken, oof
 		//	game+mod			|gameinfo_path|custom/*
+			
 			gamebin										|gameinfo_path|bin.
 			game+mod+mod_write+default_write_path		|gameinfo_path|.
 			
