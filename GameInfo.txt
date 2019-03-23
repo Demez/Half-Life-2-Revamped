@@ -31,33 +31,26 @@
 		//
 		SearchPaths
 		{
-			gamebin				|gameinfo_path|bin.
 			
-			Game				|gameinfo_path|.
-			//Game				mod_episodic
-			Game				mod_hl2
+		// * is broken, oof
+		//	game+mod			|gameinfo_path|custom/*
 			
-			// ok i can't use this lol
-			// map loading for testing, will remove once i get the vmf's in here
-			//Game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\ep2\"
-			//Game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\episodic\"
-			//Game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\"
+			gamebin										|gameinfo_path|bin.
+			game+mod+mod_write+default_write_path		|gameinfo_path|.
 			
-			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\hl2_sound_vo_english.vpk"
-			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\hl2_pak.vpk"
-			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\hl2_textures.vpk"
-			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\hl2_sound_misc.vpk"
+		//	game				ep2\ep2_pak.vpk
+		//	game				ep2
 			
-			// temp until i can use hl2_misc.vpk without issues, and when |all_source_engine_paths| works
-			game				"C:\sourceengine\extracted_games\HL2\misc"
+		//	game				episodic\ep1_pak.vpk
+		//	game				episodic
 			
-			// temp for map mounting until |all_source_engine_paths| works
-			Game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\"
-			
-			
-			mod+mod_write+default_write_path		|gameinfo_path|.
-			
-			Platform			platform
+			// hl2 can go fucking die with it's vpk sorting
+			game				hl2\hl2_sound_vo_english.vpk
+			game				hl2\hl2_pak.vpk
+			game				hl2\hl2_textures.vpk
+			game				hl2\hl2_sound_misc.vpk
+			game				hl2\hl2_misc.vpk
+			game				hl2
 		}
 	}
 }
