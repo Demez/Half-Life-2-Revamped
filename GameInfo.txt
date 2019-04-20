@@ -38,11 +38,11 @@
 			gamebin										|gameinfo_path|bin.
 			game+mod+mod_write+default_write_path		|gameinfo_path|.
 			
-		//	game				ep2\ep2_pak.vpk
-		//	game				ep2
+			game				ep2\ep2_pak.vpk
+			game				ep2
 			
-		//	game				episodic\ep1_pak.vpk
-		//	game				episodic
+			game				episodic\ep1_pak.vpk
+			game				episodic
 			
 			// hl2 can go fucking die with it's vpk sorting
 			game				hl2\hl2_sound_vo_english.vpk
